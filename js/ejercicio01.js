@@ -1,25 +1,26 @@
 
-/*
-//--------------Ejercicio resuelto con getElementById
-var color= document.getElementById("colorTexto");
-var cambiar=document.getElementById("cambiar");
-var titulo=document.getElementById("titulo");
+
+/*//--------------Ejercicio resuelto con getElementById
+
+                var color= document.getElementById("colorTexto");
+                var cambiar=document.getElementById("cambiar");
+                var titulo=document.getElementById("titulo");
 
 
 
-cambiar.addEventListener('click', () => {
+                cambiar.addEventListener('click', () => {
 
-    var elegido= color.value;
-    color.select();
-    titulo.style.color = elegido;
-})
+                    var elegido= color.value;
+                    color.select();
+                    titulo.style.color = elegido;
+                })
 
-color.addEventListener("input", actualizar, false);
+                color.addEventListener("input", actualizar, false);
 
- // detecta el nuevo color 
-function actualizar(event) {
-    elegido= event.target.value;
-}
+                // detecta el nuevo color 
+                function actualizar(event) {
+                    elegido= event.target.value;
+                }
 */
 
 
