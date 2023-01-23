@@ -52,11 +52,19 @@ let addItemButton = "";
  }
 
  function MostrarOcultarLista(){
-  // Muestra u oculta la información de las cosas que son violeta (listDiv)
+  if(toggleList.innerHTML == "Ocultar lista"){
+    listDiv.style.visibility = "hidden"
+    toggleList.innerHTML = "Mostrar lista"
+  }else{
+    listDiv.style.visibility = "visible"
+    toggleList.innerHTML = "Ocultar lista"
+  }
+
+
  }
  function CambiarTextoLista(){
-  //Modifica  el texto de la lista (descriptionP) con el valor del input (descriptionInput).
-  // Inicialmente COSAS QUE SON VIOLETA
+  descriptionP.innerHTML = descriptionInput.value;
+
  }
  function AñadirElemento(){
   //Añade un nuevo elemento a la lista con el valor del input (addItemInput). 
