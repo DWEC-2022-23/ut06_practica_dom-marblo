@@ -10,7 +10,7 @@ function pintarOpcion(evt) {
     var ul = posicion.nextElementSibling
     
     var arrayElements = ul.children;
-    text = "Has elegido " + posicion.textContent.trim() + " en turno de " + posicion.parentElement.id + "</br>Los nº de grupso que se imparten son " + ul.childElementCount + ": ";
+    text = "Has elegido " + posicion.textContent.trim() + " en turno de " + posicion.parentElement.id + "</br>Los nº de grupos que se imparten son " + ul.childElementCount + ": ";
     
         for (let i = 0; i < arrayElements.length; i++) {
             if(i != arrayElements.length -1){
