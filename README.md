@@ -2,7 +2,7 @@
 # U.T.6 .- UTILIZACIÓN DEL MODELO DE OBJETOS DEL DOCUMENTO (DOM) EN JAVASCRIPT . TRABAJAR CON DOM
 Utilización del modelo de objetos del documento (dom) en javascript . Trabajar con dom
 <h3> Práctica realizada por Pablo Sainz y Marta Torres<h3>
-<a href="https://dwec-2022-23.github.io/ut06_practica_dom-marblo/"> Para acceder a la practica pulsa aqui</a>
+<p><a href="https://dwec-2022-23.github.io/ut06_practica_dom-marblo/"> Para acceder a la practica pulsa aqui</a></p>
 
 
 ## Objetivo: 
