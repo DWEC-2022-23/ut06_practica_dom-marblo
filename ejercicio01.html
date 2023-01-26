@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>DOM en JavaScript</title>
-    <link rel="stylesheet" href="css/style.css">   
-  </head>
-  <body>
-    <h1 >DOM en JavaScript </h1>
-    <p>Modificando atributos de elementos</p> 
-    <input > 
-    <button >Cambiar el color del encabezado</button>
-    <script type="text/javascript" src="js/ejercicio01.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-9">
+                <h2 id="titulo" name="titulo" style="color:black">DOM en JavaScript</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <p>Modificando atributos de elementos</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5">
+               <input type="color" id="colorTexto" name="colorTexto">
+            </div>
+            <div class="col-5">
+                <input type="submit" value="Cambiar el color del encabezado" id="cambiar" name="cambiar">
+            </div>
+        </div>
+    </div>
+       <script src="js/ejercicio01.js"></script> 
+       <script src="js/bootstrap.bundle.min.js"></script>  
+</body>
 </html>
