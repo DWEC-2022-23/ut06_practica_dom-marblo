@@ -48,7 +48,45 @@ let addItemButton = "";
  }
 
  function crearbotones(event) {
-  // Realiza las acciones de los botones subir, borrar y bajar para los elementos de la lista
+
+  if(event.target.className == "borrar"){
+    var boton = event.target;
+    var padreLi = boton.parentElement
+    var padreUl = padreLi.parentElement;
+
+    padreUl.removeChild(padreLi)
+                
+ }
+
+ if(event.target.className == "subir"){
+  var boton = event.target;
+  var elementoLiSubir = boton.parentElement
+  var elementoLiBajar = elementoLiSubir.previousElementSibling
+  if(elementoLiBajar!=null){
+    var padreUl = elementoLiSubir.parentElement;
+  var aux2= elementoLiBajar;
+  const node = elementoLiSubir;
+  const clone = node.cloneNode(true);
+  padreUl.replaceChild(clone,elementoLiBajar);
+  padreUl.replaceChild(aux2,elementoLiSubir);
+  }
+           
+}
+
+if(event.target.className == "bajar"){
+  var boton = event.target;
+  var elementoLiBajar = boton.parentElement
+  var elementoLiSubir = elementoLiBajar.nextElementSibling
+  if(elementoLiSubir!=null){
+    var padreUl = elementoLiBajar.parentElement;
+  var aux2= elementoLiSubir;
+  const node = elementoLiBajar;
+  const clone = node.cloneNode(true);
+  padreUl.replaceChild(clone,elementoLiSubir);
+  padreUl.replaceChild(aux2,elementoLiBajar);
+              
+}
+}
  }
 
  function MostrarOcultarLista(){
@@ -67,8 +105,15 @@ let addItemButton = "";
 
  }
  function AñadirElemento(){
-  //Añade un nuevo elemento a la lista con el valor del input (addItemInput). 
-  //Recuerda que el elemento tendrá que tener sus botones de subir, bajar y borrar.
- }
+  
+  var nuevoLi = document.createElement("li")
+  var t=addItemInput.value;
+  if(t.length>0){
+     nuevoLi.innerHTML = t;
+      listUl.appendChild(nuevoLi);
+  }
 
+  attachListItemButtons(nuevoLi);
+
+ }
 
